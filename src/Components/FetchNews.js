@@ -12,6 +12,8 @@ const FetchNews = () => {
         .then((response)=>{
             console.log(response);
            setNews(response.data.articles)
+        }).catch(err=>{
+          console.error(err)
         })
     }
   return (
